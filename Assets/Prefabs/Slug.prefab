@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 919796879912725616}
   - component: {fileID: 3046864216508242567}
   - component: {fileID: 5997928389630905334}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Slug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 6886280943172302423}
   - component: {fileID: 4867313430505107534}
   - component: {fileID: 3474184910857410316}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpriteQuad
   m_TagString: Untagged
   m_Icon: {fileID: 0}

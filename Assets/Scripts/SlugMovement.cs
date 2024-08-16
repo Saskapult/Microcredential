@@ -27,7 +27,7 @@ public class SlugMovement : MonoBehaviour
     }
 
     bool onGround() {
-        return Physics.OverlapSphere(transform.position, 0.05f, LayerMask.GetMask("Ground")).Length != 0;
+        return Physics.OverlapSphere(transform.position, 0.05f, ~LayerMask.GetMask("Player")).Length != 0;
     }
 
     // Update is called once per frame
