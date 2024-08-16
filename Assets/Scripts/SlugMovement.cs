@@ -13,11 +13,13 @@ public class SlugMovement : MonoBehaviour
     private bool jumpTime = false;
 
     private Rigidbody body;
+    private Transform camera;
 
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody>();
+        camera = Camera.main.transform;
     }
 
     void Update() {
@@ -36,7 +38,7 @@ public class SlugMovement : MonoBehaviour
         var vertical = Input.GetAxis("Vertical");
         var horizontal = Input.GetAxis("Horizontal");
         Vector3 dir = (transform.right * horizontal + transform.forward * vertical).normalized;
-        body.MovePosition(transform.position + dir * speed * Time.fixedDeltaTime);
+        body.MovePosition(transform.position + camera.rotation * dir * speed * Time.fixedDeltaTime);
 
         if (jumpTime) {
             body.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
