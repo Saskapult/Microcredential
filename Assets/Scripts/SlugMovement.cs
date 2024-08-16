@@ -37,8 +37,8 @@ public class SlugMovement : MonoBehaviour
     {
         var vertical = Input.GetAxis("Vertical");
         var horizontal = Input.GetAxis("Horizontal");
-        Vector3 dir = (transform.right * horizontal + transform.forward * vertical).normalized;
-        body.MovePosition(transform.position + camera.rotation * dir * speed * Time.fixedDeltaTime);
+        Vector3 dir = (camera.right * horizontal + transform.forward * vertical).normalized;
+        body.MovePosition(transform.position + dir * speed * Time.fixedDeltaTime);
 
         if (jumpTime) {
             body.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
