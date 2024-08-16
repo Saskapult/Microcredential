@@ -415,8 +415,8 @@ GameObject:
   - component: {fileID: 498443386}
   - component: {fileID: 498443385}
   m_Layer: 0
-  m_Name: Platform
-  m_TagString: Untagged
+  m_Name: MovingPlatform
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -443,7 +443,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498443384}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f4110be0bff1306ac8c2916c9b1f78fd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3113,7 +3113,7 @@ GameObject:
   - component: {fileID: 1644556789}
   - component: {fileID: 1644556788}
   m_Layer: 0
-  m_Name: Platform (1)
+  m_Name: StaticPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
